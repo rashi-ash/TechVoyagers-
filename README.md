@@ -1,11 +1,9 @@
 ![StackUp Banner]([https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg])
-# Project Name
-Long Description about project. This project do that. This project is awesome...
-## Team members
-1. Name [Embed personal github URL]
-2. Name [Embed perosnal github URL]
+# LuxeCart
+## "Crafting an E-commerce Platform for Seamless Shopping."
+My project redefines the e-commerce experience, providing a comprehensive solution for both customers and businesses. I am developing a feature-rich e-commerce website that encompasses essential components such as a user-friendly product listings interface, secure user authentication for account creation and login, streamlined product details and cart management, a cart summary for easy order review, a backend application for efficient account and product management, and a secure database to store user data and product listings. This project aims to deliver a seamless and secure online shopping experience, combining user convenience, functionality, and security, all as a solo effort to enhance the world of e-commerce.
 ## Team Id
-Team id here
+TechVoyagers
 ## Link to product walkthrough
 [link to video]
 ## How it Works ?
