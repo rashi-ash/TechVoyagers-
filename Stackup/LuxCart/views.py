@@ -11,3 +11,5 @@ def pd(request):
     return render(request,'productdetails.html')
 def cart(request):
     return render(request,'viewcart.html')
+def login(request):
+    return render(request,'login.html')
