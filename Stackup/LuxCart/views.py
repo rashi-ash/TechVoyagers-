@@ -7,3 +7,7 @@ def home(request):
     products_data=productlisting.objects.all()
     print(products_data)
     return render(request,'productListing.html',{'products':products_data})
+def pd(request):
+    return render(request,'productdetails.html')
+def cart(request):
+    return render(request,'viewcart.html')
