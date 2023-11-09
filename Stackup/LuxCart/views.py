@@ -23,10 +23,11 @@ def add_cart(request,id):
     ob = Product.objects.get(id=id)
     Cart.objects.get(user=request.user).product.add(ob)
     return redirect('cart')
-
+@login_required
 def cart(request):
+    user_cart,created=Cart.objects.get_or_create(user=request.user)
     return render(request,'viewcart.html', {
-        'cart': Cart.objects.get(user=request.user)
+        'cart': user_cart
     })
 
 
