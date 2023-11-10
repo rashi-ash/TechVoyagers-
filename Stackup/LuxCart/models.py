@@ -20,6 +20,7 @@ class Product(models.Model):
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ManyToManyField(Product, blank=True)
+    # quantity=models.IntegerField(default=0)
 
     def __str__(self):
         return "Cart of " + self.user.username

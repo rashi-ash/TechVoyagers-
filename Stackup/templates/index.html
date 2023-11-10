@@ -37,8 +37,32 @@ rel="stylesheet"
           {% comment %} <a class="navbar-brand" href="{% url 'logout' %}"><button type="button" class="btn btn-primary btn-rounded">Logout</button></a> {% endcomment %}
           {% if user.is_authenticated %}
           <a class="navbar-brand" href="{% url 'logout' %}">
-              <button type="button" class="btn btn-primary btn-rounded">Logout</button>
+              <button type="button" class="btn btn-primary btn-rounded">Logout</button>   
           </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'cart'%}">Cart</a>
+              </li>
+            </ul>
+            {% if is_product_page %}
+            <!-- Show product search form -->
+            <form class="d-flex" method="GET" action="{% url 'search' %}">
+                <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        {% elif is_cart_page %}
+       
+        
+        <button class="btn btn-outline-primary" ><i class="fa fa-long-arrow-left"></i> <span class="ml-1"><a href="{% url  'home'  %}" >Back</a></span></button>
+      
+        {% endif %}
+
+            
+          </div>
          {% else %}
           <a class="navbar-brand" href="{% url 'login' %}">
               <button type="button" class="btn btn-primary btn-rounded">Login</button>
@@ -48,29 +72,7 @@ rel="stylesheet"
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="#">
-                  Dropdown
-                </a>
-        
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#" >Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+          
         </div>
       </nav>
 </div>

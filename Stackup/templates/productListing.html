@@ -45,9 +45,9 @@
                 <h6 class="text-success">Free shipping</h6>
                 <div class="d-flex flex-column mt-4">
                <a href="{% url 'pd' obj.id %}" class="btn btn-primary btn-sm" type="button">Details </a>
-                  <button class="btn btn-outline-primary btn-sm mt-2" type="button">
-                    Add to wishlist
-                  </button>
+                  <button class="btn btn-outline-primary btn-sm mt-2" type="button"><a href="{% url 'add_cart' obj.id %}">
+                    Add to Cart
+                  </a> </button>
                 </div>
               </div>
             </div>
