@@ -21,8 +21,42 @@ TechVoyagers
 - pip install psycopg2-binary
 [link to video]
 ## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
+1. Registration:
+
+Users access the registration page.
+They provide a username and password.
+Upon successful registration, users are redirected to the login page.
+2. Login:
+
+Users enter their username and password.
+If the credentials are validated, users are authenticated.
+After authentication, users are redirected to the product listing page.
+3. Product Listing Page:
+
+Users can view a list of available products.
+Each product has a button to view more details.
+Users can add products to their cart from this page.
+4. Product Details Page:
+
+Clicking on the "know more" button for a product takes the user to a detailed view of that product.
+Users can get additional information about the selected product.
+5. Cart Page:
+
+Each user has their own cart page.
+Users can view the products they have added to their cart.
+There is an option to delete items from the cart.
+6. Search Functionality:
+
+Users can search for specific products.
+The search functionality allows users to find the products they are interested in.
+7. Authentication and Authorization:
+
+Users need to be authenticated to access certain pages, such as the product listing and cart.
+Each user has their own cart, ensuring privacy and separation of user data.
+8. Logout:
+
+Users have the option to log out, ending their session.
+
    
 ## How to Run
 - python manage.py runserver
