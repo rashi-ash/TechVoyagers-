@@ -45,11 +45,9 @@ There is an option to delete items from the cart.
 Users can search for specific products.
 The search functionality allows users to find the products they are interested in.
 - Authentication and Authorization:
-
 Users need to be authenticated to access certain pages, such as the product listing and cart.
 Each user has their own cart, ensuring privacy and separation of user data.
 - Logout:
-
 Users have the option to log out, ending their session.
 
    
