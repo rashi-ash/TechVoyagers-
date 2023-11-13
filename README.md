@@ -22,6 +22,12 @@ TechVoyagers
 [link to video]
 ## How it Works ?
 
+
+
+
+https://github.com/rashi-ash/TechVoyagers-/assets/83757768/2df713a3-8122-4dc3-a38c-ebec9a342d8c
+
+
 - Registration:
 Users access the registration page.
 They provide a username and password.
